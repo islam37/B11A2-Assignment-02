@@ -113,3 +113,65 @@
   }
 
 
+  /* Banner style */
+    .banner{
+        display: flex;
+        justify-content: space-between;
+        /* max-width:100% ; */
+        margin:8% auto;
+        padding: 25px;
+        align-items: center;
+        width: 90%;
+        height: 90%;
+        background-color: #f8f8f8;
+        text-align: left;
+        
+    }
+    .banner  img{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0 auto;
+
+    }
+    .headline{
+        width: 50%;
+        margin: left ;
+        padding: 20px;
+        
+    }
+    .pera{
+       padding: 20px;
+         font-size: 1.2rem;
+    }
+    #btn2{
+        background-color: black;
+    }
+    #btn2:hover{
+        background-color: #f1356d;
+    }
+
+    /* Banner responsibility for mobile device */
+    @media screen and (max-width:576px)
+    {
+         .banner{
+            display: flex;
+            flex-direction: column-reverse;
+         }
+         .box2 img{
+             width: 95%;
+             height: 95%;
+            }
+            .headline{
+                width: 100%;
+                text-align: center;
+            }   
+            .pera{
+                text-align: center;
+            }
+            #btn2{
+                display: block;
+                margin: 0 auto;
+            }
+    }
+
+

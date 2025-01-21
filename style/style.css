@@ -98,6 +98,11 @@
    .btn-primary{
        display: none;
    }
+   .navbar{
+       display: flex;
+       justify-content: space-between;
+       
+   }
   }
 
   /* responsible for desktop and laptops */

@@ -1,0 +1,110 @@
+/*  font family */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+.quicksand-font-bold {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.quicksand-font-medium {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.quicksand-font-semibold {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+/* nav bar style */
+.navbar{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 10px 20px;
+   margin:0 auto ;
+}
+.img-p{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-links{
+    display:flex;
+    gap: 20px;
+    
+    
+}
+.nav-links ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+#About-color{
+    color: #FEA301;
+}
+#Admision-color{
+    color: red;
+}
+#Faci-color{
+    color: green;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+   
+  text-decoration: none;
+   
+}
+
+
+.btn-primary{
+    background-color: #FEA301;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .btn-primary:hover{
+    background-color: #f1356d;
+  }
+
+  /* nav bar responsibility */
+
+  /* responsible for mobile device */
+  
+  @media screen and (max-width: 576px){
+   .nav-links{
+       display: none;
+   }
+   .school{
+       display: none;
+   }
+   .btn-primary{
+       display: none;
+   }
+  }
+
+  /* responsible for desktop and laptops */
+  @media screen and (min-width: 577px) and (max-width:1400px){
+   .icon{
+       display: none;
+   }
+  }
+
+

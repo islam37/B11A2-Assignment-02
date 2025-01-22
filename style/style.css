@@ -19,7 +19,19 @@
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
+
+ 
+
 }
+.quicksand-font-small {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  
+   
+  
+  }
 *{
     margin: 0;
     padding: 0;
@@ -118,7 +130,7 @@
         display: flex;
         justify-content: space-between;
         /* max-width:100% ; */
-        margin:8% auto;
+        margin:0 auto;
         padding: 25px;
         align-items: center;
         width: 90%;
@@ -126,6 +138,9 @@
         background-color: #f8f8f8;
         text-align: left;
         
+    }
+    .box1{
+        width: 50%;
     }
     .banner  img{
         width: 100%;
@@ -176,12 +191,14 @@
 
     /* standard curriculum section */
 
+    main{
+        background-image: url(../assets/bg.png);
+        background-repeat: none;
+        background-position: cover;
+    }
 
   .big-conainer{
-    background-image: url(../assets/light-BG.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+   
     padding: 40px;
     
     justify-content: center;
@@ -242,7 +259,7 @@
         background-color: #f1356d;
     }
     #btn-002{
-        color: #f1356d;
+        color: blue;
     }
     #btn-003{
         color: green;
@@ -254,6 +271,7 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
+            
         }
         .item-1, .item-2, .item-3{
             width: 100%;
@@ -261,4 +279,89 @@
         }
     }
 
+
+    /* story section  */
+    
+
+/* CSS Grid Layout */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+.foot{
+    background-color: #01ACFD;
+    padding: 12%;
+}
+.parent{
+    display: flex;
+    max-width: 95%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.child1,.child2,.child3
+{
+    margin: 0,auto;
+    text-align: left;
+    max-width: 32%;
+}
+.child2 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.child2 a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.child3 ul  {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.child3 ul img{
+    width: 24px;
+    height: 24px;
+
+}
+.child11{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+footer{
+    color: #FFFFFF;
+}
+
+
+/*  footer responsible for mobile device  */
+
+@media screen and (max-width:576px)
+{
+    .parent{
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }
+    .child1,.child2,.child3{
+        max-width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+}
 

@@ -174,4 +174,91 @@
             }
     }
 
+    /* standard curriculum section */
+
+
+  .big-conainer{
+    background-image: url(../assets/light-BG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 40px;
+    
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+ }
+    .container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 25px;
+        margin-top: 0 auto;
+        gap: 20px;
+       
+    }
+    .margi{
+        margin-bottom: 10px;
+    }
+
+    .item-1, .item-2, .item-3{
+        padding: 20px;
+        margin: 0 auto;
+        width: 350px;
+        height: 420px;
+        border-radius: 10px;
+        
+       
+    }
+    .item-1{
+        
+            background-image: linear-gradient(#DEF5FF, #FFFFFF);
+          
+    }
+    .item-2{
+        background-image: linear-gradient(#FFF4DC, #FFFFFF);
+    }
+    .item-3{
+        background-image: linear-gradient(#EEE1FF, #FFFFFF);
+    }
+  
+  
+  
+    .btn-secondary{
+            
+        color: black;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        width:102px;
+        height:50px;
+        margin-top: 10px;
+    }
+    .btn-secondary:hover{
+        background-color: #f1356d;
+    }
+    #btn-002{
+        color: #f1356d;
+    }
+    #btn-003{
+        color: green;
+    }
+
+    /* responsible for mobile device */
+    @media screen and (max-width: 576px){
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .item-1, .item-2, .item-3{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
 
